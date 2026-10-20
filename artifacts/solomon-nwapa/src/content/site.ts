@@ -134,10 +134,10 @@ export const site: SiteContent = {
 
   biography: [
     "Solomon Nwapa is an Enterprise & Digital Software Developer and CEO of Cent22 Intelligence.",
-    "He builds purposeful software products around business needs, considering the people they serve and the workflows they support.",
-    "His areas of focus include enterprise and business software, SaaS, digital platforms and marketplaces, workflow automation, and intelligent software solutions.",
+    "I am a native of Oguta L.G.A in Imo State, Nigeria and an aspiring Aerospace Engineering degree holder with MASSACHUSETTS INSTITUTE OF TECHNOLOGY {MIT}. I build purposeful software products around business needs, considering the people they serve and the workflows they support.",
+    "My areas of focus include enterprise and business software, SaaS, digital platforms and marketplaces, workflow automation, and intelligent software solutions.",
     "AdBOSS and NovaSplit are part of his product portfolio.",
-    "His broader vision through Cent22 Intelligence is to build purposeful software products and intelligent operating systems that address real business problems.",
+    "My broader vision through Cent22 Intelligence is to build purposeful software products and intelligent operating systems that address real business problems.",
   ],
 
   email: "Scnwapa@gmail.com",
@@ -219,7 +219,8 @@ export const site: SiteContent = {
     },
 
     about: {
-      metaTitle: "About Solomon Nwapa | Enterprise & Digital Software Developer",
+      metaTitle:
+        "About Solomon Nwapa | Enterprise & Digital Software Developer",
       metaDescription:
         "Learn about Solomon Nwapa, Enterprise & Digital Software Developer and CEO of Cent22 Intelligence.",
       eyebrow: "Professional biography",
@@ -269,7 +270,8 @@ export const site: SiteContent = {
         "Writing on software products, business needs, and technology from Solomon Nwapa.",
       eyebrow: "Insights",
       title: "Software, products, and business.",
-      summary: "Notes on building software products around real business needs.",
+      summary:
+        "Notes on building software products around real business needs.",
       contactLink: "Contact Solomon",
     },
 
