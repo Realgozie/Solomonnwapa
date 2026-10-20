@@ -1,0 +1,53 @@
+Continue the NovaSplit case-study work in artifacts/solomon-nwapa. This is an evidence-led content and implementation task, not a portfolio redesign.
+
+Confirmed project references
+
+* Live demo: https://novasplit.vercel.app
+* GitHub repository: https://github.com/Realgozie/NovaSplit
+* Product history: NovaSplit evolved between an expense-splitting concept and a broader SaaS dashboard experience.
+* An earlier CV describes a dashboard with analytics, billing, invoices, authentication, calendar, and customer management. Treat these as documented claims to verify against the actual project, not automatically as confirmed working features.
+
+1. Inspect the evidence first
+Read the existing files:
+
+* src/content/projects/novasplit.ts
+* src/content/projects/types.ts
+* src/app/work/[slug]/page.tsx
+
+Then inspect the supplied GitHub repository, especially its README, package manifest, source files, routes, components, and available screenshots. Use the actual source to establish:
+
+* The product’s current purpose and intended audience.
+* How the expense-splitting concept relates to the dashboard version.
+* Features visibly implemented versus incomplete, planned, or merely described.
+* Verified technology stack and any identifiable backend or integrations.
+* The engineering work evidenced by the code.
+* The current state of the live deployment, if it can be checked.
+
+Do not invent a timeline, user numbers, business results, customer adoption, or personal contributions that the evidence does not establish. If repository access fails, report that limitation instead of guessing.
+
+2. Write a stronger case study
+Present NovaSplit as an evolving product project, explaining the change in direction only to the extent supported by the available evidence. Use a clear structure:
+
+* Project overview
+* Problem and intended users
+* Product evolution and design decisions
+* Implemented capabilities
+* Technology and architecture
+* My contribution
+* Current status and next steps
+
+Distinguish working features from planned or unverified ones. Remove repetitive placeholder prose, but preserve useful uncertainty notes where evidence is genuinely missing.
+
+3. Update the existing project content
+Use the verified live demo and repository URLs in the existing project-data structure. Keep the established portfolio layout, typography, colours, responsive behaviour, and reusable project-page components. Do not add dependencies, redesign unrelated pages, or deploy anything.
+
+4. Verify and report
+Run the project’s existing typecheck, production build, and git diff --check. Review the NovaSplit page at desktop and mobile widths. Report:
+
+* Files changed
+* Evidence used
+* Confirmed versus unverified claims
+* Commands and results
+* Anything still requiring my confirmation
+
+Make only changes justified by the evidence.

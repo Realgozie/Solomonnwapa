@@ -1,0 +1,53 @@
+AdBOSS source-code and Vercel deployment verification audit
+
+We are auditing AdBOSS for an accurate case study on my professional portfolio.
+
+Correct production URL: https://adbossng.vercel.app
+
+Source repository: https://github.com/Realgozie/AdBOSS — verify that this repository is accessible and is the correct source for the deployed application before relying on it.
+
+Objectives
+
+1. Inspect the actual AdBOSS source code and available project documentation.
+2. Inspect the live production deployment at https://adbossng.vercel.app.
+3. Compare documented and implemented features with what can actually be verified.
+4. Produce an evidence-based report to support an accurate portfolio case study.
+
+Audit requirements
+
+Check the following where applicable:
+
+* Frameworks, languages, libraries and backend architecture.
+* Authentication, account security, email verification, password reset and two-factor authentication.
+* Campaign creation, management and export.
+* Team management, roles and administrative functionality.
+* Payment integration, including Stripe, if present.
+* Email and notification workflows.
+* Database persistence, validation, error handling and security controls.
+* Tests and deployment configuration.
+* Publicly accessible routes and major user workflows.
+
+For every feature, assign one status:
+
+* Verified in source
+* Verified in live deployment
+* Partially verified
+* Planned or documented only
+* Not found
+* Unable to verify
+
+Include the supporting file paths, functions, routes, tests or live-page evidence wherever possible. Clearly distinguish code inspection from successful live testing. Do not claim that a feature works merely because its implementation exists.
+
+Deployment rules
+
+* Treat https://adbossng.vercel.app as the intended production URL.
+* Do not substitute a Replit URL.
+* Confirm whether the live deployment is reachable and which routes can be accessed without signing in.
+* Do not bypass authentication, perform destructive operations, make real payments or send unsolicited emails.
+* Never expose credentials, tokens or other secrets.
+
+Deliverable
+
+Create ADDBOSS_VERIFICATION_AUDIT.md in the appropriate project documentation directory, or provide the complete report if the source repository is unavailable.
+
+Do not modify the application, deploy changes or rewrite the portfolio case study during this audit. Finish by listing the exact facts we can safely use in the AdBOSS portfolio case study and any remaining uncertainties.

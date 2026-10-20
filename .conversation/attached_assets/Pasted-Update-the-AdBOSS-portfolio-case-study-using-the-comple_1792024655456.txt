@@ -1,0 +1,43 @@
+Update the AdBOSS portfolio case study using the completed “AdBOSS Source and Deployment Verification Audit” supplied in this conversation.
+
+Scope
+
+Modify only the portfolio’s AdBOSS case-study content and the minimum presentation logic required to display it accurately. Do not modify the AdBOSS application or its deployment.
+
+Inspect these files first:
+
+* src/content/projects/adboss.ts
+* src/content/projects/types.ts
+* src/app/work/[slug]/page.tsx
+
+Preserve the existing portfolio design, typography, color palette, responsive layout, and reusable project-page components.
+
+Required content
+
+1. Project: AdBOSS
+2. Live application: https://adbossng.vercel.app
+3. Source repository: https://github.com/Realgozie/adbossng
+4. Positioning: A digital advertising campaign management platform with account workflows, campaign records, dashboard functionality, team-related features, and payment-integration code.
+5. Technical foundation: React 18, Vite, Tailwind CSS, Node.js/Express, PostgreSQL, and Vercel configuration, as supported by the audit.
+6. Engineering scope: Describe the capabilities found in the source without implying that every workflow has been tested or works in production.
+7. Project status: Clearly distinguish the live public marketing site from unverified signed-in workflows and payment functionality.
+
+Accuracy requirements
+
+* Do not claim that AdBOSS publishes campaigns to external advertising networks; the audit found no such integration.
+* Do not claim that live Stripe checkout works.
+* Do not claim secure authentication, enforced role-based permissions, or subscription-limit enforcement.
+* Do not present hardcoded dashboard figures, testimonials, customer counts, or ROI figures as real results.
+* Do not invent business outcomes, customers, metrics, or personal contributions that the evidence does not establish.
+* Remove any existing statements that the repository is unavailable or that the project has no live URL.
+* Do not describe the product as production-secure.
+
+Write a strong, professional case study that explains the product concept, technical architecture, implemented source-level capabilities, and engineering considerations without turning the public portfolio into a security incident report.
+
+Keep detailed security findings in the internal audit/backlog, not as promotional copy.
+
+Validation
+
+Run the portfolio’s existing typecheck, build, and diff checks. Fix any regressions caused by this change. Report the exact files changed, the checks performed, and any remaining content limitations.
+
+Do not perform another broad audit, change unrelated portfolio pages, install dependencies, or deploy anything.

@@ -1,0 +1,63 @@
+PORTFOLIO PROJECT TRANSFER — BOOTSTRAP ONLY
+
+I have imported an existing Next.js portfolio website from another Replit account.
+
+Your task right now is strictly to restore the existing project environment and confirm that the website runs. Do not implement any new features or edit the website’s content yet.
+
+Phase 1: Inspect before acting
+
+1. Inspect the project directory and confirm that package.json is at the project root.
+2. Read package.json and identify the existing package manager, scripts, framework, and dependencies.
+3. Check whether the matching lockfile is present.
+4. Check the existing Replit configuration and startup command, if any.
+5. Inspect the existing project structure without rewriting files.
+
+Phase 2: Install dependencies correctly
+
+1. Use the package manager indicated by the existing project and lockfile.
+2. If a valid package-lock.json exists, prefer npm ci.
+3. If the project uses another package manager, use its existing lockfile and corresponding installation command instead.
+4. Do not install a new version of Next.js, React, Tailwind CSS, or other dependencies just because newer versions are available.
+5. Do not upgrade packages, run automatic dependency migrations, or make unrelated changes.
+6. Do not run npm audit fix or similar commands that could change the dependency tree.
+7. If installation fails, diagnose the specific error and make only the minimum necessary environment correction. Report any required environment variables or secrets without inventing them.
+
+Phase 3: Start the existing website
+
+1. Inspect the existing scripts and use the appropriate development command.
+2. Start the website using the existing supported configuration.
+3. Confirm that the homepage loads in the Replit preview.
+4. Check the About page and the existing Work, AdBOSS, NovaSplit, and Contact routes if available.
+5. Check the terminal for startup errors.
+6. If a route or feature depends on unavailable credentials, report that privately rather than inserting dummy credentials or changing application behavior.
+
+Phase 4: Preserve the project
+
+Do not:
+
+* Redesign the website.
+* Change copy or case studies.
+* Add contact details.
+* Add or remove dependencies without a demonstrated need.
+* Replace configuration files wholesale.
+* Regenerate the project from scratch.
+* Delete existing files.
+* Deploy the project.
+* Commit or push changes during this bootstrap stage.
+
+Do not modify application source files merely to make the environment start. If a genuine compatibility problem requires a source change, explain the exact issue and propose the smallest necessary correction before making it.
+
+Phase 5: Report readiness
+
+Report:
+
+* The framework and package manager detected.
+* Whether dependencies installed successfully.
+* The exact command used to start the project.
+* Whether the homepage and main routes load.
+* Any environment variables still required.
+* Any changes made during setup.
+
+Stop once the existing portfolio runs successfully. I will then provide a separate, explicit implementation prompt for the final content and contact updates.
+
+Do not begin that later work until I provide it.

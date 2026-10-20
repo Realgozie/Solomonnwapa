@@ -1,0 +1,1 @@
+- [Pnpm installs for imported apps](pnpm-imports.md) — use filtered root installs for app packages inside this workspace; an in-package npm install can leave broken links.

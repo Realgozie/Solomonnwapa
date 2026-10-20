@@ -1,0 +1,298 @@
+FINAL IMPLEMENTATION PROMPT — SOLOMON NWAPA PORTFOLIO
+
+Edit, polish, verify, and commit. Do not redesign or generate a new website.
+
+You are working on my existing personal portfolio website in the current repository.
+
+Your task is to make the specific corrections below directly in the existing codebase, finish the remaining details, run the necessary checks, and commit the completed changes to the existing GitHub repository.
+
+This is an implementation-only task. Do not generate a new website, propose alternatives, redesign the application, add new features, or expand the scope. Inspect the existing files, edit what is necessary, verify your changes, and finish.
+
+Preserve the established design system, page structure, routes, images, animations, responsive behavior, SEO configuration, and working functionality unless a specific correction below requires a change.
+
+⸻
+
+1. PROFESSIONAL IDENTITY AND POSITIONING
+
+Use this positioning consistently across the existing website:
+
+Name: Solomon Nwapa
+Professional title: Enterprise & Digital Software Developer
+Leadership role: CEO of Cent22 Intelligence
+
+My professional focus is building purposeful software products that solve real business problems. My work and product interests include enterprise software, SaaS applications, digital platforms, marketplaces, business process automation, and intelligent technology solutions.
+
+My portfolio must communicate that I think about software from both a product and business perspective: what problem the product solves, who it serves, how its experience works, and how technology supports the underlying business objective.
+
+Use this approved hero headline on the homepage:
+
+“I build industry-changing software and intelligent operating systems that matter.”
+
+Preserve the existing About-page headline:
+
+“Building intelligent software. Solving real business problems. Creating what comes next.”
+
+Use concise, direct, human writing. Avoid generic AI-generated phrases, inflated claims, repetitive adjectives, and vague statements about transforming the world without explaining the actual work.
+
+Do not invent employers, clients, awards, revenue figures, user numbers, case-study results, or professional credentials.
+
+2. PUBLIC CONTACT DETAILS — IMPLEMENT THESE EXACTLY
+
+Integrate these confirmed details into the existing Contact page and the appropriate existing global contact or social-link components. Reuse the existing layout and styles rather than creating a new contact design.
+
+Email
+
+* Display: Scnwapa@gmail.com
+* Link: mailto:Scnwapa@gmail.com
+
+Phone
+
+* Display: +234 7030292398
+* Link: tel:+2347030292398
+
+WhatsApp
+
+* Display: +234 7030292398
+* Link: https://wa.me/2347030292398
+
+X
+
+* Profile: https://x.com/goziedev?s=11
+
+LinkedIn
+
+* Profile: https://www.linkedin.com/in/solomon-nwapa-168648221
+
+Requirements:
+
+* Use the existing contact-card, link, button, or footer containers where appropriate.
+* Keep the presentation clean and professional.
+* Make the email, telephone, and WhatsApp actions functional.
+* Open external social links safely in a new tab if that matches the existing implementation.
+* Ensure the displayed details and their destinations are correct.
+* Check the homepage, footer, and Contact page for duplicate or outdated placeholder links.
+* Do not invent any additional contact details.
+* Do not expose private information from environment files or unrelated documents.
+
+3. REWRITE THE PUBLIC CASE STUDIES
+
+Inspect the existing project content and rendering components, including:
+
+* src/content/projects/adboss.ts
+* src/content/projects/novasplit.ts
+* src/content/projects/types.ts
+* src/app/work/[slug]/page.tsx
+
+Make the changes within the existing architecture. Do not create an alternative case-study system.
+
+The case studies currently contain too much process commentary and verification language. Replace that material with professional product-focused writing.
+
+Public visitors should see the product, its purpose, its relevant capabilities, and its business context—not an internal development audit.
+
+Remove public references to inaccessible repositories, unavailable README files, unverified features, missing screenshots, production problems, audit findings, verification status, implementation uncertainty, and internal workflow commentary.
+
+Do not substitute unsupported claims for removed disclaimers. Where a detail cannot be confirmed, omit it. Keep the case studies concise, useful, specific, and credible.
+
+3A. AdBOSS — APPROVED PUBLIC POSITIONING
+
+Product name: AdBOSS
+
+Live product: https://adbossng.vercel.app
+
+GitHub repository: https://github.com/Realgozie/adbossng
+
+Position AdBOSS as a digital marketing and campaign-management product intended to help businesses organize and manage advertising-related activities.
+
+Use this headline:
+
+“AdBOSS — A digital platform for advertising and campaign management.”
+
+Use this introductory description:
+
+“AdBOSS is a digital product focused on helping businesses organize advertising activities and manage campaign-related workflows through a dedicated online platform. The project brings together campaign management, account access, and business-oriented functionality in one product experience.”
+
+Explain the project through these public-facing sections, using the existing case-study layout:
+
+The product
+
+“AdBOSS explores how advertising and campaign-management workflows can be brought into a dedicated digital platform, giving businesses a structured place to work with campaign-related activities.”
+
+Product focus
+
+* Advertising and campaign-management workflows.
+* Account access and user-facing application experiences.
+* Business-oriented tools and administrative functionality where supported by the existing implementation.
+* A web-based product experience designed around organizing marketing activities.
+
+Development approach
+
+Describe only the implementation technologies and architectural details already confirmed in the project source. Do not guess the stack. If a technology cannot be confirmed, omit the technology claim rather than showing a public disclaimer.
+
+Project links
+
+Keep the working links to the live product and GitHub repository.
+
+Important: Do not claim that external advertising networks are integrated, that payment processing is operational, that campaign performance has been proven, or that specific business outcomes have been achieved unless the relevant claim is directly supported by reliable evidence.
+
+Do not describe AdBOSS as a fully validated advertising marketplace or claim capabilities beyond the actual product.
+
+3B. NovaSplit — APPROVED PUBLIC POSITIONING
+
+Product name: NovaSplit
+
+Live product: https://novasplit.vercel.app
+
+GitHub repository: https://github.com/Realgozie/NovaSplit
+
+NovaSplit evolved across two related product concepts: an expense-splitting concept and a broader SaaS dashboard experience. The public live website presents NovaSplit as a SaaS analytics product.
+
+Use this headline:
+
+“NovaSplit — A SaaS dashboard experience for analytics and business workflows.”
+
+Use this introductory description:
+
+“NovaSplit is a digital product project that evolved from an expense-splitting concept into a broader SaaS dashboard experience. Its public-facing direction centers on an organized analytics interface and the wider experience of working within a modern web application.”
+
+Product direction
+
+“NovaSplit reflects an exploration of how digital products can present information and application workflows through a cohesive, structured dashboard experience.”
+
+Product focus
+
+* SaaS dashboard and analytics-oriented interface design.
+* Structured information presentation.
+* Modern web application experience.
+* Exploration of dashboard-based business workflows.
+
+Only include additional capabilities—such as billing, invoices, customer management, calendar tools, authentication, or payment processing—if they can be directly confirmed from accessible project files or the running product. Do not list advertised or assumed capabilities as verified implementations.
+
+Development approach
+
+Only list technologies confirmed by the existing source code or trustworthy project configuration. Do not assume that NovaSplit uses a particular framework, language, database, or payment provider simply because it is a common SaaS stack.
+
+Do not publish statements about repository access failures, missing source files, unverified implementation, or unavailable screenshots.
+
+Keep the live and GitHub links in the existing project-link area.
+
+3C. Case-study writing and presentation
+
+For both projects:
+
+* Lead with what the product is and what it is intended to do.
+* Explain the product in language a prospective client or collaborator can understand.
+* Make each paragraph contribute meaningful information.
+* Avoid repeating the same introduction in the overview, objectives, and conclusion.
+* Avoid generic sections such as “Why this matters” if they contain no specific information.
+* Do not invent project metrics, client testimonials, user adoption, or commercial results.
+* Do not add fabricated screenshots or illustrative images that appear to be actual product screenshots.
+* Preserve the current visual style and case-study component architecture.
+* Keep technology lists evidence-based and concise.
+
+Do not make public claims about my personal contribution that cannot be established. Use neutral project language rather than inventing a team structure or attributing every implementation decision to me.
+
+4. CLEAN UP THE REMAINING PUBLIC PAGES
+
+Make a focused final review of the existing:
+
+* Homepage.
+* About page.
+* Work index.
+* Capabilities page.
+* Industries page.
+* Insights page.
+* Contact page.
+* Shared header, navigation, footer, and CTA components.
+
+Do not rewrite everything unnecessarily. Correct only content that is generic, repetitive, misleading, unfinished, or inconsistent with my professional positioning.
+
+Capabilities
+
+Present capabilities in terms of software product development, SaaS applications, enterprise and business software, digital platforms and marketplaces, workflow automation, and intelligent software solutions. Keep the wording credible and do not imply a verified client track record where none is documented.
+
+Industries
+
+Present industries as areas of product interest and software application—not as a list of clients served unless that experience is verified.
+
+Insights
+
+Do not fabricate articles or display placeholder content as published thought leadership. Preserve real existing content if available; otherwise, keep the page clean and intentional without unnecessary public explanations.
+
+Calls to action
+
+Use clear, direct calls to action. Ensure buttons lead to real destinations and do not leave placeholder URLs or nonfunctional controls.
+
+5. VISUAL AND FUNCTIONAL PRESERVATION
+
+Keep the current premium visual direction:
+
+* Cream/ivory background.
+* Navy typography.
+* Restrained burgundy accents.
+* Clear typography hierarchy.
+* Refined cards, spacing, and CTA buttons.
+* Existing responsive behavior and animations.
+
+Do not redesign the portfolio or replace the current theme.
+
+Do not add dependencies, new product features, unnecessary pages, speculative integrations, or a new CMS.
+
+Preserve existing metadata, canonical URLs, structured data, sitemap, robots configuration, reduced-motion support, keyboard accessibility, and responsive navigation.
+
+Verify that public-facing text does not overflow, buttons remain readable, links work, and project details display correctly on desktop and mobile.
+
+6. FINAL CHECKS
+
+Run the checks supported by the existing project:
+
+* TypeScript/typecheck.
+* Lint, if configured.
+* Production build.
+* git diff --check.
+
+Check the main routes, especially:
+
+* /
+* /about
+* /work
+* /work/adboss
+* /work/novasplit
+* /capabilities
+* /industries
+* /insights
+* /contact
+
+Confirm the contact details are rendered correctly and all email, phone, WhatsApp, X, LinkedIn, and project links point to the correct destinations.
+
+Fix regressions introduced by the changes. Do not claim a check passed unless it actually ran successfully.
+
+Do not deploy the site as part of this task.
+
+7. GITHUB COMMIT AND PUSH
+
+Once the changes are complete:
+
+1. Inspect the current Git branch, remotes, and git status.
+2. Preserve unrelated existing work. Never reset, overwrite, or discard changes that are not part of this task.
+3. Review the final diff.
+4. Ensure .env files, credentials, secrets, private information, build output, and unrelated files are not staged.
+5. Stage only the intended portfolio changes.
+6. Commit with this message:
+
+Finalize portfolio content, case studies, and contact details
+
+7. Push to the existing intended GitHub repository and current appropriate branch if the configured remote is correct and the push succeeds.
+8. Do not change the repository remote, create a different repository, or force-push without authorization.
+
+8. COMPLETION REPORT
+
+When finished, provide a concise report stating:
+
+* Which public pages and case studies were updated.
+* Confirmation that the supplied contact details were integrated.
+* Actual results of the checks run.
+* The commit hash and branch.
+* Whether the push to GitHub succeeded.
+* Any remaining blocker that genuinely requires my action.
+
+Do not return another proposal or ask me to approve the writing before implementation. Apply these instructions directly to the existing project, finish the work, and report the actual outcome.
