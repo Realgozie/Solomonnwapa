@@ -8,6 +8,9 @@ import { getSiteOrigin } from "@/lib/site-url";
 const baseUrl = getSiteOrigin();
 
 export const metadata: Metadata = {
+  verification: {
+    google: "t7im1TJ2b1KjkjC9oGstMvrHaIvOTRGoW2R8wEwZ4zc",
+  },
   metadataBase: new URL(baseUrl ?? "http://localhost:3000"),
   icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
   title: { default: site.seoTitle, template: `%s — ${site.name}` },
