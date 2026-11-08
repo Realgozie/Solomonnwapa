@@ -136,7 +136,7 @@ export const site: SiteContent = {
     "Solomon Nwapa is an Enterprise & Digital Software Developer and CEO of Cent22 Intelligence.",
     "I am a native of Oguta L.G.A in Imo State, Nigeria and an aspiring Aerospace Engineering degree holder with MASSACHUSETTS INSTITUTE OF TECHNOLOGY {MIT}. I build purposeful software products around business needs, considering the people they serve and the workflows they support.",
     "My areas of focus include enterprise and business software, SaaS, digital platforms and marketplaces, workflow automation, and intelligent software solutions.",
-    "AdBOSS and NovaSplit are part of his product portfolio.",
+    "AdBOSS and NovaSplit are part of my product portfolio.",
     "My broader vision through Cent22 Intelligence is to build purposeful software products and intelligent operating systems that address real business problems.",
   ],
 
@@ -229,7 +229,7 @@ export const site: SiteContent = {
         "Building intelligent software. Solving real business problems. Creating what comes next.",
       profileLabel: "Professional profile",
       visionLabel: "Vision",
-      visionHeading: "His broader vision through Cent22 Intelligence",
+      visionHeading: "My broader vision through Cent22 Intelligence",
       contactLink: "Discuss a project",
     },
 
