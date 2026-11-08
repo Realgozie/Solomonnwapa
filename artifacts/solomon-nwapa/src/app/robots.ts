@@ -1,16 +1,14 @@
 import type { MetadataRoute } from "next";
-import { getRequestSiteOrigin } from "@/lib/site-url";
+import { PRODUCTION_SITE_ORIGIN } from "@/lib/site-url";
 
-export const dynamic = "force-dynamic";
+export const dynamic = "force-static";
 
-export default async function robots(): Promise<MetadataRoute.Robots> {
-  const origin = await getRequestSiteOrigin();
-
+export default function robots(): MetadataRoute.Robots {
   return {
     rules: {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: new URL("/sitemap.xml", origin).toString(),
+    sitemap: new URL("/sitemap.xml", PRODUCTION_SITE_ORIGIN).toString(),
   };
 }
