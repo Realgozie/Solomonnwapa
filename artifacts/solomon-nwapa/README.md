@@ -1,10 +1,10 @@
-# Solomon Nwapa — CEO of Cent22 Intelligence
+# Solomon Nwapa — Founder of AxSpec Technologies
 
 A responsive professional website and software portfolio built with the Next.js
 App Router, TypeScript, and Tailwind CSS. It has no database, backend service,
 analytics dependency, paid API, or Replit-specific runtime package.
 
-Solomon Nwapa is presented as CEO of Cent22 Intelligence and an Enterprise &
+Solomon Nwapa is presented as founder of AxSpec Technologies and an Enterprise &
 Digital Software Developer. Company services, history, customers, and results
 are not described unless confirmed.
 
@@ -72,10 +72,10 @@ copy:
   `images.professionalPortrait` after adding the approved photographs
 - `images.socialImage` for an optional custom sharing image
 
-Unknown personal details remain `null`. No biography, email, profile, Cent22
-company facts, client, testimonial, metric, project capability, technology
-stack, or project outcome has been invented. Contact does not display a fake
-message form.
+Unknown personal details remain `null`. No biography, email, profile,
+AxSpec Technologies company facts, client, testimonial, metric, project
+capability, technology stack, or project outcome has been invented. Contact
+does not display a fake message form.
 
 ### Project profiles
 

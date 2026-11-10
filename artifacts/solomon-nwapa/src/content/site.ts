@@ -110,8 +110,8 @@ export type SiteContent = {
 const professionalIdentity = {
   name: "Solomon Nwapa",
   title: "Enterprise & Digital Software Developer",
-  organizationName: "Cent22 Intelligence",
-  organizationRole: "CEO",
+  organizationName: "AxSpec Technologies",
+  organizationRole: "Founder",
 };
 
 const identityLine = `${professionalIdentity.organizationRole} of ${professionalIdentity.organizationName} · ${professionalIdentity.title}`;
@@ -121,10 +121,10 @@ export const site: SiteContent = {
 
   identityLine,
 
-  seoTitle: "Solomon Nwapa | Enterprise & Digital Software Developer",
+  seoTitle: "Solomon Nwapa | Founder of AxSpec Technologies",
 
   description:
-    "Solomon Nwapa is an Enterprise & Digital Software Developer and CEO of Cent22 Intelligence, building purposeful software around business needs.",
+    "Solomon Nwapa is an Enterprise & Digital Software Developer and founder of AxSpec Technologies, building purposeful software around business needs.",
 
   headline: {
     lead: "I build",
@@ -133,11 +133,11 @@ export const site: SiteContent = {
   },
 
   biography: [
-    "Solomon Nwapa is an Enterprise & Digital Software Developer and CEO of Cent22 Intelligence.",
-    "I am a native of Oguta L.G.A in Imo State, Nigeria and an aspiring Aerospace Engineering degree holder with MASSACHUSETTS INSTITUTE OF TECHNOLOGY {MIT}. I build purposeful software products around business needs, considering the people they serve and the workflows they support.",
+    "I am an Enterprise & Digital Software Developer and the founder of AxSpec Technologies.",
+    "I am from Oguta Local Government Area in Imo State, Nigeria. I build purposeful software products around real business needs, considering the people they serve and the workflows they support. I am also in pursuit of my Aerospace career and advanced engineering.",
     "My areas of focus include enterprise and business software, SaaS, digital platforms and marketplaces, workflow automation, and intelligent software solutions.",
     "AdBOSS and NovaSplit are part of my product portfolio.",
-    "My broader vision through Cent22 Intelligence is to build purposeful software products and intelligent operating systems that address real business problems.",
+    "My broader vision through AxSpec Technologies is to build purposeful software products and intelligent operating systems that address real business problems.",
   ],
 
   email: "Scnwapa@gmail.com",
@@ -202,9 +202,9 @@ export const site: SiteContent = {
 
   pages: {
     home: {
-      metaTitle: "Solomon Nwapa | Enterprise & Digital Software Developer",
+      metaTitle: "Solomon Nwapa | Founder of AxSpec Technologies",
       metaDescription:
-        "Solomon Nwapa is an Enterprise & Digital Software Developer and CEO of Cent22 Intelligence, building purposeful software around business needs.",
+        "Solomon Nwapa is an Enterprise & Digital Software Developer and founder of AxSpec Technologies, building purposeful software around business needs.",
       eyebrow: identityLine,
       introduction:
         "I build enterprise software, SaaS products, digital platforms, and automation around real business needs.",
@@ -222,14 +222,14 @@ export const site: SiteContent = {
       metaTitle:
         "About Solomon Nwapa | Enterprise & Digital Software Developer",
       metaDescription:
-        "Learn about Solomon Nwapa, Enterprise & Digital Software Developer and CEO of Cent22 Intelligence.",
+        "Learn about Solomon Nwapa, Enterprise & Digital Software Developer and founder of AxSpec Technologies.",
       eyebrow: "Professional biography",
       title: "About Solomon Nwapa",
       summary:
         "Building intelligent software. Solving real business problems. Creating what comes next.",
       profileLabel: "Professional profile",
       visionLabel: "Vision",
-      visionHeading: "My broader vision through Cent22 Intelligence",
+      visionHeading: "My broader vision through AxSpec Technologies",
       contactLink: "Discuss a project",
     },
 
@@ -276,9 +276,9 @@ export const site: SiteContent = {
     },
 
     contact: {
-      metaTitle: "Contact Solomon Nwapa | Cent22 Intelligence",
+      metaTitle: "Contact Solomon Nwapa | AxSpec Technologies",
       metaDescription:
-        "Business enquiries and collaboration with Solomon Nwapa, CEO of Cent22 Intelligence and Enterprise & Digital Software Developer.",
+        "Business enquiries and collaboration with Solomon Nwapa, founder of AxSpec Technologies and Enterprise & Digital Software Developer.",
       eyebrow: "Contact",
       title: "Business enquiries and collaboration.",
       summary:
