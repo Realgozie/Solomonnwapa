@@ -111,7 +111,7 @@ const professionalIdentity = {
   name: "Solomon Nwapa",
   title: "Enterprise & Digital Software Developer",
   organizationName: "AxSpec Technologies",
-  organizationRole: "Founder",
+  organizationRole: "Founder & CEO",
 };
 
 const identityLine = `${professionalIdentity.organizationRole} of ${professionalIdentity.organizationName} · ${professionalIdentity.title}`;
@@ -121,10 +121,10 @@ export const site: SiteContent = {
 
   identityLine,
 
-  seoTitle: "Solomon Nwapa | Founder of AxSpec Technologies",
+  seoTitle: "Solomon Nwapa | Founder & CEO of AxSpec Technologies",
 
   description:
-    "Solomon Nwapa is an Enterprise & Digital Software Developer and founder of AxSpec Technologies, building purposeful software around business needs.",
+    "Solomon Nwapa is an Enterprise & Digital Software Developer and Founder & CEO of AxSpec Technologies, building purposeful software around business needs.",
 
   headline: {
     lead: "I build",
@@ -133,7 +133,7 @@ export const site: SiteContent = {
   },
 
   biography: [
-    "I am an Enterprise & Digital Software Developer and the founder of AxSpec Technologies.",
+    "I am an Enterprise & Digital Software Developer and the Founder & CEO of AxSpec Technologies.",
     "I am from Oguta Local Government Area in Imo State, Nigeria. I build purposeful software products around real business needs, considering the people they serve and the workflows they support. I am also in pursuit of my Aerospace career and advanced engineering.",
     "My areas of focus include enterprise and business software, SaaS, digital platforms and marketplaces, workflow automation, and intelligent software solutions.",
     "AdBOSS and NovaSplit are part of my product portfolio.",
@@ -202,15 +202,15 @@ export const site: SiteContent = {
 
   pages: {
     home: {
-      metaTitle: "Solomon Nwapa | Founder of AxSpec Technologies",
+      metaTitle: "Solomon Nwapa | Founder & CEO of AxSpec Technologies",
       metaDescription:
-        "Solomon Nwapa is an Enterprise & Digital Software Developer and founder of AxSpec Technologies, building purposeful software around business needs.",
+        "Solomon Nwapa is an Enterprise & Digital Software Developer and Founder & CEO of AxSpec Technologies, building purposeful software around business needs.",
       eyebrow: identityLine,
       introduction:
         "I build enterprise software, SaaS products, digital platforms, and automation around real business needs.",
       focusLabel: "Areas of focus",
       projectsLabel: "Selected projects",
-      projectsTitle: "AdBOSS and NovaSplit.",
+      projectsTitle: "AxSpec Technologies, AdBOSS, and NovaSplit.",
       projectsLink: "View all work",
       contactEyebrow: "Business enquiries",
       contactTitle: "Discuss a software opportunity.",
@@ -222,7 +222,7 @@ export const site: SiteContent = {
       metaTitle:
         "About Solomon Nwapa | Enterprise & Digital Software Developer",
       metaDescription:
-        "Learn about Solomon Nwapa, Enterprise & Digital Software Developer and founder of AxSpec Technologies.",
+        "Learn about Solomon Nwapa, Enterprise & Digital Software Developer and Founder & CEO of AxSpec Technologies.",
       eyebrow: "Professional biography",
       title: "About Solomon Nwapa",
       summary:
@@ -236,11 +236,11 @@ export const site: SiteContent = {
     work: {
       metaTitle: "Selected Work | Solomon Nwapa",
       metaDescription:
-        "Explore AdBOSS and NovaSplit, software products shaped around business needs.",
+        "Explore AxSpec Technologies, AdBOSS, and NovaSplit, from the company venture to software products shaped around business needs.",
       eyebrow: "Project index",
-      title: "Selected products.",
+      title: "Selected work.",
       summary:
-        "A closer look at AdBOSS and NovaSplit, their product focus, and the needs they address.",
+        "AxSpec Technologies is the company venture. AdBOSS and NovaSplit remain selected product studies.",
     },
 
     capabilities: {
@@ -278,7 +278,7 @@ export const site: SiteContent = {
     contact: {
       metaTitle: "Contact Solomon Nwapa | AxSpec Technologies",
       metaDescription:
-        "Business enquiries and collaboration with Solomon Nwapa, founder of AxSpec Technologies and Enterprise & Digital Software Developer.",
+        "Business enquiries and collaboration with Solomon Nwapa, Founder & CEO of AxSpec Technologies and Enterprise & Digital Software Developer.",
       eyebrow: "Contact",
       title: "Business enquiries and collaboration.",
       summary:

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import { CompanyVenture } from "@/components/company-venture";
 import { JsonLd } from "@/components/json-ld";
 import { PageIntro } from "@/components/layout";
 import { ScrollReveal } from "@/components/scroll-reveal";
@@ -27,10 +28,20 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     );
   }
 
+  const screenshot = project.screenshots[0];
   return createPageMetadata(
-    `${project.name} case study`,
-    project.summary,
+    project.metaTitle ?? `${project.name} case study`,
+    project.metaDescription ?? project.summary,
     `/work/${project.slug}`,
+    Boolean(project.metaTitle),
+    project.kind === "venture" && screenshot
+      ? {
+          url: screenshot.src,
+          alt: screenshot.alt,
+          width: screenshot.width,
+          height: screenshot.height,
+        }
+      : undefined,
   );
 }
 
@@ -48,6 +59,7 @@ export default async function ProjectPage({ params }: Props) {
   const { slug } = await params;
   const project = getProject(slug);
   if (!project) notFound();
+  if (project.kind === "venture") return <CompanyVenture project={project} />;
 
   const details = [
     { label: "Audience", value: project.intendedAudience },

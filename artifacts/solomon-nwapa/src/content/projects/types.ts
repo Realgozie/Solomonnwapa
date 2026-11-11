@@ -5,6 +5,12 @@ export type ProjectScreenshot = {
   height: number;
 };
 
+export type ProjectSection = {
+  id: string;
+  heading: string;
+  paragraphs: readonly string[];
+};
+
 export type ProjectContent = {
   slug: string;
   name: string;
@@ -18,4 +24,15 @@ export type ProjectContent = {
   screenshots: readonly ProjectScreenshot[];
   liveUrl: string | null;
   sourceUrl?: string | null;
+  kind?: "product" | "venture";
+  category?: string;
+  headline?: string;
+  metaTitle?: string;
+  metaDescription?: string;
+  sections?: readonly ProjectSection[];
+  focusAreas?: readonly string[];
+  roleTitle?: string;
+  roleParagraphs?: readonly string[];
+  status?: readonly string[];
+  contactEmail?: string;
 };

@@ -9,6 +9,7 @@ const paths = [
   "/work",
   "/work/adboss",
   "/work/novasplit",
+  "/work/axspec",
   "/capabilities",
   "/industries",
   "/insights",
