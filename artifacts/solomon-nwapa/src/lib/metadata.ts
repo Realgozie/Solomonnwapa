@@ -7,13 +7,19 @@ export function createPageMetadata(
   description: string,
   path: string,
   absoluteTitle = false,
+  image?: { url: string; alt: string; width: number; height: number },
 ): Metadata {
   const origin = getSiteOrigin();
   const canonical = origin ? new URL(path, origin).toString() : undefined;
   const socialTitle = title.includes(site.name)
     ? title
     : `${title} — ${site.name}`;
-  const socialImage = site.images.socialImage ?? "/opengraph-image";
+  const socialImage = image ?? {
+    url: site.images.socialImage ?? "/opengraph-image",
+    alt: socialTitle,
+    width: 1200,
+    height: 630,
+  };
 
   return {
     title: absoluteTitle ? { absolute: title } : title,
@@ -25,13 +31,13 @@ export function createPageMetadata(
       description,
       siteName: site.name,
       url: canonical,
-      images: [{ url: socialImage, width: 1200, height: 630, alt: socialTitle }],
+      images: [socialImage],
     },
     twitter: {
       card: "summary_large_image",
       title: socialTitle,
       description,
-      images: [socialImage],
+      images: [socialImage.url],
     },
   };
 }
