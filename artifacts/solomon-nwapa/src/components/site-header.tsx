@@ -1,9 +1,10 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useRef, useState } from "react";
-import { navigation, site } from "@/content/site";
+import { navigation } from "@/content/site";
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
@@ -20,9 +21,8 @@ export function SiteHeader() {
   return (
     <header className="relative z-20 border-b border-[var(--line)]">
       <div className="page-shell flex min-h-[76px] items-center justify-between gap-5">
-        <Link href="/" className="group flex items-center gap-3" aria-label="Solomon Nwapa home">
-          <span className="grid h-9 w-9 place-items-center border border-[var(--ink)] text-[11px] font-semibold tracking-[-.08em] transition-colors group-hover:bg-[var(--ink)] group-hover:text-[var(--paper)]">SN</span>
-          <span className="text-[13px] font-semibold tracking-[-.03em]">{site.name}</span>
+        <Link href="/" className="site-logo-link" aria-label="Solomon Nwapa logo">
+          <Image src="/brand/solomon-nwapa-logo.png" alt="Solomon Nwapa logo" width={928} height={295} priority className="site-logo" />
         </Link>
         <nav aria-label="Main navigation" className="hidden items-center gap-7 lg:flex">
           {navigation.map((item) => (

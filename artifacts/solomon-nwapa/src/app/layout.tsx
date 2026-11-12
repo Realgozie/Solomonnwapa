@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     google: "t7im1TJ2b1KjkjC9oGstMvrHaIvOTRGoW2R8wEwZ4zc",
   },
   metadataBase: new URL(baseUrl ?? "http://localhost:3000"),
-  icons: { icon: "/favicon.svg", shortcut: "/favicon.svg" },
+  icons: { icon: "/brand/solomon-nwapa-mark.png", shortcut: "/brand/solomon-nwapa-mark.png" },
   title: { default: site.seoTitle, template: `%s — ${site.name}` },
   description: site.description,
   openGraph: {
