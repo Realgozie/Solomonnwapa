@@ -1,11 +1,25 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { AxSpecHeroVideo } from "@/components/axspec-hero-video";
 import { ProfileImageSlot } from "@/components/profile-image-slot";
 import { site } from "@/content/site";
 import { projects } from "@/content/projects";
 import { createPageMetadata } from "@/lib/metadata";
 import { ScrollReveal } from "@/components/scroll-reveal";
+
+const productVisuals = {
+  adboss: {
+    src: "/images/projects/adboss/adboss-hero.png",
+    alt: "AdBOSS landing page with a campaign analytics dashboard and revenue metrics.",
+    position: "center",
+  },
+  novasplit: {
+    src: "/images/projects/novasplit/novasplit-public.jpg",
+    alt: "NovaSplit analytics dashboard product visual.",
+    position: "center",
+  },
+} as const;
 
 export const metadata: Metadata = createPageMetadata(
   site.pages.home.metaTitle,
@@ -47,16 +61,19 @@ export default function HomePage() {
       <div className="grid gap-4">
         {projects.filter((project) => project.kind === "venture").map((project) => {
           const screenshot = project.screenshots[0];
-          return <ScrollReveal key={project.slug}><Link href={`/work/${project.slug}`} className="project-card-link home-project-card group relative flex min-h-[280px] flex-col justify-between overflow-hidden border border-[var(--line)] bg-[var(--white)] p-6 sm:p-7 md:p-9">
-            <div className="flex items-start justify-between gap-4"><span className="eyebrow !text-[var(--ink)]/65">{project.category}</span><span className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-[var(--ink)]/30 transition-transform group-hover:rotate-45">↗</span></div>
-            {screenshot ? <Image src={screenshot.src} alt={screenshot.alt} width={screenshot.width} height={screenshot.height} sizes="(max-width: 767px) 86vw, 1100px" className="my-6 h-auto w-full border border-[var(--line)]" /> : null}
-            <div><p className="mb-2 max-w-3xl text-xs leading-5 text-[var(--muted)]">{project.summary}</p><h3 className="home-project-title serif text-[clamp(2.5rem,5vw,4.75rem)] leading-[.95]">{project.name}</h3><div className="mt-5 border-t border-[var(--ink)]/20 pt-4 text-[10px] font-semibold uppercase tracking-[.16em] text-[var(--muted)]">Open case study <span aria-hidden>↗</span></div></div>
+          return <ScrollReveal key={project.slug}><Link href={`/work/${project.slug}`} className="project-card-link home-project-card home-axspec-card group relative flex min-h-[28rem] flex-col justify-between overflow-hidden border border-[var(--line)] bg-[#101c2c] md:min-h-0">
+            <AxSpecHeroVideo poster="/images/projects/axspec/axspec-opengraph.png" alt={screenshot?.alt ?? "AxSpec Technologies"} />
+            <div className="home-axspec-copy">
+              <div className="flex items-start justify-between gap-4"><span className="eyebrow">{project.category}</span><span className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-[var(--paper)]/40 transition-transform group-hover:rotate-45">↗</span></div>
+              <div><p className="mb-2 max-w-xl text-xs leading-5">{project.summary}</p><h3 className="home-project-title serif text-[clamp(2.5rem,5vw,4.75rem)] leading-[.95]">{project.name}</h3><div className="home-axspec-action mt-5 border-t pt-4 text-[10px] font-semibold uppercase tracking-[.16em]">Open case study <span aria-hidden>↗</span></div></div>
+            </div>
           </Link></ScrollReveal>;
         })}
       </div>
       <div className="mt-4 grid gap-4 md:grid-cols-2">
         {projects.filter((project) => project.kind !== "venture").map((project, i) => <ScrollReveal key={project.slug} delayMs={i * 90}><Link href={`/work/${project.slug}`} className={`project-card-link home-project-card group relative flex min-h-[280px] flex-col justify-between overflow-hidden border border-[var(--line)] p-6 sm:min-h-[315px] sm:p-7 md:min-h-[390px] md:p-9 ${project.tone === "coral" ? "bg-[var(--accent-soft)]" : "bg-[var(--blue-soft)]"}`}>
           <div className="flex items-start justify-between"><span className="eyebrow !text-[var(--ink)]/65">Product / {project.index}</span><span className="grid h-9 w-9 place-items-center rounded-full border border-[var(--ink)]/30 transition-transform group-hover:rotate-45">↗</span></div>
+          {project.slug === "adboss" || project.slug === "novasplit" ? <div className={`home-project-media${project.slug === "novasplit" ? " home-project-media-cover" : ""}`}><Image src={productVisuals[project.slug].src} alt={productVisuals[project.slug].alt} fill sizes="(max-width: 767px) 92vw, 540px" className="home-project-media-image" style={{ objectFit: "cover", objectPosition: productVisuals[project.slug].position }} /></div> : null}
           <div><p className="mb-2 text-xs leading-5 text-[var(--muted)]">{project.summary}</p><h3 className="home-project-title serif text-[clamp(2.75rem,8vw,6rem)] leading-[.95]">{project.name}</h3><div className="mt-5 border-t border-[var(--ink)]/20 pt-4 text-[10px] font-semibold uppercase tracking-[.16em] text-[var(--muted)]">Open case study <span aria-hidden>↗</span></div></div>
         </Link></ScrollReveal>)}
       </div>

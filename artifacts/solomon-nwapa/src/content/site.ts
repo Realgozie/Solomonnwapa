@@ -292,6 +292,7 @@ export const site: SiteContent = {
 };
 
 export const navigation = [
+  { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Work", href: "/work" },
   { label: "Capabilities", href: "/capabilities" },
