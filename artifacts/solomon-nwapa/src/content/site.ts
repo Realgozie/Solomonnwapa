@@ -91,7 +91,10 @@ export type SiteContent = {
       metaDescription: string;
       eyebrow: string;
       title: string;
-      summary: string;
+      introduction: string[];
+      subjects: string[];
+      closingTitle: string;
+      closingCopy: string;
       contactLink: string;
     };
     contact: {
@@ -265,13 +268,27 @@ export const site: SiteContent = {
     },
 
     insights: {
-      metaTitle: "Insights | Solomon Nwapa",
+      metaTitle:
+        "Insights on Enterprise Software, Intelligent Systems & Product Engineering | Solomon Nwapa",
       metaDescription:
-        "Writing on software products, business needs, and technology from Solomon Nwapa.",
+        "Explore perspectives on enterprise software, intelligent systems, product engineering, digital infrastructure, and building technology around real business and industry challenges.",
       eyebrow: "Insights",
-      title: "Software, products, and business.",
-      summary:
-        "Notes on building software products around real business needs.",
+      title: "Ideas for building the systems behind better businesses.",
+      introduction: [
+        "Technology is most valuable when it solves problems that matter. I explore the thinking, engineering, and decisions behind enterprise software, intelligent digital systems, and products designed around the realities of modern businesses and industries.",
+        "These insights draw from the intersection of technology, business operations, product development, and industry transformation. From rethinking inefficient processes to designing scalable software and exploring the possibilities of intelligent systems, the focus is on building technology with purpose, not simply adding technology for its own sake.",
+      ],
+      subjects: [
+        "Designing software around complex business operations, industry requirements, workflows, and the systems organizations depend on.",
+        "The thinking behind turning business problems into useful products, from identifying opportunities and defining product architecture to execution and refinement.",
+        "Exploring AI, automation, autonomous agents, and intelligent infrastructure as practical tools for improving how businesses operate.",
+        "Examining how purposeful technology can address operational challenges across healthcare, energy, construction, finance, hospitality, and other sectors.",
+        "Understanding the relationship between processes, data, digital infrastructure, organizational efficiency, and sustainable business growth.",
+        "Practical perspectives on architecture, engineering decisions, product development, technical trade-offs, and lessons from building real software.",
+      ],
+      closingTitle: "Technology should move industries forward.",
+      closingCopy:
+        "Better software begins with better questions. Better systems emerge when engineering meets a genuine understanding of the problems businesses and people face. That is the thinking behind what I build—and what I explore here.",
       contactLink: "Contact Solomon",
     },
 
